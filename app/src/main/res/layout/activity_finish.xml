@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalFinishActivity">
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="395dp"
+        android:layout_height="204dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/retryAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Try quiz again"
+        app:layout_constraintEnd_toEndOf="@+id/resultView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/resultView"
+        app:layout_constraintTop_toBottomOf="@+id/resultView" />
+
+    <Button
+        android:id="@+id/newCartoonQuiz"
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="Cartoon quiz"
+        app:layout_constraintEnd_toEndOf="@+id/retryAnimal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/retryAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/retryAnimal" />
+
+    <ImageView
+        android:id="@+id/logOffAnimal"
+        android:layout_width="77dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/newCartoonQuiz"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/newCartoonQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/newCartoonQuiz"
+        app:srcCompat="@drawable/logoff" />
+</androidx.constraintlayout.widget.ConstraintLayout>

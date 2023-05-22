@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/usernameRegView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="User Name"
+        app:layout_constraintBottom_toBottomOf="@+id/usernameRegInput"
+        app:layout_constraintEnd_toStartOf="@+id/usernameRegInput"
+        app:layout_constraintTop_toTopOf="@+id/usernameRegInput"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <EditText
+        android:id="@+id/usernameRegInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/passwordRegInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/usernameRegInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameRegInput"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegInput"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/passwordRegView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordRegInput"
+        app:layout_constraintEnd_toStartOf="@+id/passwordRegInput"
+        app:layout_constraintTop_toTopOf="@+id/passwordRegInput" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRegInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordRegInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>

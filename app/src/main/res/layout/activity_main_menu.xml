@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/animalImg"
+        android:layout_width="182dp"
+        android:layout_height="213dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        app:srcCompat="@drawable/animals"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/cartoonImg"
+        android:layout_width="212dp"
+        android:layout_height="211dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/animalImg"
+        app:layout_constraintEnd_toStartOf="@+id/animalImg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/animalImg"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cartoons" />
+
+    <TextView
+        android:id="@+id/cartoonTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartoon"
+        app:layout_constraintEnd_toEndOf="@+id/cartoonImg"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/cartoonImg"
+        app:layout_constraintTop_toBottomOf="@+id/cartoonImg" />
+
+    <TextView
+        android:id="@+id/animalTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal"
+        app:layout_constraintEnd_toEndOf="@+id/animalImg"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/animalImg"
+        app:layout_constraintTop_toBottomOf="@+id/animalImg" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Welcome to Kid's World"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/tipsForUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="@color/purple_200"
+        android:text="Tips for Users: you can select from one of the two areas above:\n -Animal question type: fill in the blank \n -Cartoon question type: multiple choice question"
+        app:layout_constraintEnd_toEndOf="@+id/cartoonTxtView"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="@+id/cartoonTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/cartoonTxtView" />
+
+    <TextView
+        android:id="@+id/cartoonScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/cartoonTxtView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cartoonTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/cartoonTxtView" />
+
+    <TextView
+        android:id="@+id/animalScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/animalTxtView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/animalTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/animalTxtView" />
+
+    <ImageView
+        android:id="@+id/logoffMainmenu"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logoff" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
